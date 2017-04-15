@@ -11,9 +11,9 @@ The approach taken was quite basic with the following steps:
 
  1. Utilize data from the [LUNA 2016 challenge](https://luna16.grand-challenge.org/). Preprocessing the LUNA16 images to segment the lungs using scripts from https://github.com/gzuidhof/luna16.
  2. Build a [U-Net](https://arxiv.org/abs/1505.04597)  model to predict nodules (using Keras and Tensorflow)
- 2. Predict both on the full LUNA16 and DSB data using the U-Net model and extract 32x32x32 voxels from most prominent prediction volumes.
+ 2. Predict both on the full LUNA16 and DSB data using the U-Net model and extract 32x32x32 voxels from most prominent prediction volumes using dilation and erosion from skimage to find volumes.
  3. Build various 3D convolution nets to perform false-positive reduction using the LUNA16 data (using Keras and Tensorflow)
- 4. Apply the false-positive models to output probabilities and combine into a prediction Random Forest model using the Stage 1 labels.
+ 4. Apply the false-positive models to output probabilities and combine with bounding box locations of voxels into a prediction Random Forest model using the Stage 1 labels.
  5. Utilize the Random Forest model to output final probabilities for stage2
 
 
