@@ -1,6 +1,6 @@
 # Data Science Bowl 2017 Solution
 
-A quick review of my entry to the [Kaggle Data Science Bowl 2017](https://www.kaggle.com/c/data-science-bowl-2017). The final submission (bluesky) ranked 95th from 1972 teams.
+A quick review of my entry to the [Kaggle Data Science Bowl 2017](https://www.kaggle.com/c/data-science-bowl-2017). The final submission (bluesky) ranked 91st from 1972 teams.
 
 ![lung slice](lung.png)
 
